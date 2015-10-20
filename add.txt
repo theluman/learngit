@@ -1,0 +1,11 @@
+本地文件编写完，需要先使用git add 添加到仓库，在使用git commit -m "" 将文件提交到仓库
+1.git add
+[chao@localhost learngit]$ git add creat.txt
+
+2.git commit
+（-m 是对文件修改的解释)
+[chao@localhost learngit]$ git commit -m"两种方法建立版本库"
+[master 7ab737e] 两种方法建立版本库
+ 1 file changed, 26 insertions(+)
+ create mode 100644 creat.txt
+
