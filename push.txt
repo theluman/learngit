@@ -1,0 +1,12 @@
+将添加到仓库的文件修改master推送的远程库 使用git push orgin master
+(orgin 远程库 git默认的叫法，可以修改)
+
+1.第一次推送使用 -u
+git push -u orgin master
+第一次使用会出现警告，以及ssh没有添加的错误，本地生成ssh秘钥，添加到github.com即可
+擦错误提示信息被我删了。。等我有时间在添加
+
+2.之后的每次使用就可以简化使用
+git push origin master
+
+
