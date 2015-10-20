@@ -1,0 +1,26 @@
+#
+创建版本库（两种方法）
+一：利用本地目录创建（空目录/非空目录），然后远程创建相同名称版本库，将两者关联到一起
+
+1.在合适的位置建立空目录：
+[chao@localhost ~]$ mkdir learnpython
+[chao@localhost ~]$ cd learnpython/
+[chao@localhost learnpython]$ pwd
+/home/chao/learnpython
+
+2.使用 git init 命令将这个目录变成 git可以管理的仓库（初始化一个git仓库）
+[chao@localhost learnpython]$ git init
+Initialized empty Git repository in /home/chao/learnpython/.git/
+
+3.github.com网站创建learnpython版本库
+
+4.本地库推送到远程库实现关联
+[chao@localhost learnpython]$ git remote add orgin git@github.com:你在github上的用户名/learnpython.git
+
+二：先github.com网站创建远程版本库，在git clone 建立到本地
+
+1.github.com网站创建远程版本库
+
+2.git clone到本地
+$git clone git@github.com:你在github上的用户名/库名称.git
+
