@@ -1,0 +1,29 @@
+安装完成后，还需要最后一步设置，在命令行输入：
+
+$ git config --global user.name "Your Name"
+$ git config --global user.email "email@example.com"
+
+创建版本库有两种方式：
+第一种：
+1.先在本地将某（空/非空）个文件夹初始化成git可以管理的仓库，
+$ mkdir learngit
+$ cd learngit
+$ git init
+Initialized empty Git repository in /home/learngit/.git/
+2.再github.com远程建立相同名称的远程仓库，然后将本地的仓库和远程的关联到一起
+$ git remote add origin git@github.com:theluman/learngit.git
+
+第二种：（推荐使用）
+1.先远程建立仓库
+2.再克隆到本地,可多台机器克隆
+$ git clone git@github.com:theluman/learngit.git
+
+修改本地工作区文件-->将修过增加到暂存区-->就修改提交到分支-->将分支推送到远程库
+vim abc.txt ------- git add abc.txt ---------- git commit -m ""------【git push -u origin master（第一次）】
+vim bcd.txt           git add bcd.txt     git commit -m ""   git push origin master（非第一次）
+vim def.txt           git add def.txt     git commit -m ""
+                                         【 git commit -am ""】
+
+git commit -m "" -m 是填写修改说明
+git commit -am ""  -a是将前几次的add一次性添加到分之
+git push -u origin master -u 是第一次使用，推送并将远程master与本地master联系到一起
